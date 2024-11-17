@@ -1,12 +1,9 @@
 services:
   app:
     build: .
-#    ports:
-#      - '${PORT}:${PORT}'
     volumes:
        - ./app.js:/usr/src/app/app.js
-#      - .:/usr/src/app
-#      - /usr/src/app/node_modules
+       - ./prompts:/usr/src/app/prompts
     env_file:
       - .env
     environment:
