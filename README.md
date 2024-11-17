@@ -1,6 +1,6 @@
 # Actual-GPT
 
-Welcome to Actual-GPT! This project is a ChatGPT add-on for Actual Server, designed to enhance your budgeting experience by automating two key tasks:
+Welcome to Actual-GPT! This project is a ChatGPT add-on for [Actual Server](https://github.com/actualbudget/actual), designed to enhance your budgeting experience by automating two key tasks:
 
 1. Transaction Categorization: Use ChatGPT to automatically categorize your transactions, saving you the time and effort of doing it manually.  
 2. Scheduled Bank Syncs: Regularly sync your bank data to prevent token expiration and ensure your budget is always up-to-date.
