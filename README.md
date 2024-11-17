@@ -29,7 +29,6 @@ I've developed it as a bit of a learning experience, but hope it will be useful 
   - [Security Considerations](#security-considerations)
   - [Contributing](#contributing)
   - [License](#license)
-  - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -38,7 +37,7 @@ I've developed it as a bit of a learning experience, but hope it will be useful 
 Before you begin, make sure you have the following:
 
 - **Docker**: Installed and running on your system.  
-- **Node.js**: Version 18 or later if you’re running without Docker.  
+- **Node.js**: Version 18 or later if you're running without Docker.  
 - **Actual Server**: An instance of Actual Server running and accessible.  
 - **OpenAI Account**: Sign up at OpenAI and obtain an API key.  
 - **Budget UUID**: The unique identifier for your budget in Actual Server.  
@@ -84,7 +83,7 @@ Fill in the `.env` file with the following variables:
 |-----------------------------------|-----------------------------------------------------------------------------|----------------------|
 | NODE_ENV                          | Set the environment mode (development or production).                       | development          |
 | SERVER_URL                        | The URL where your Actual Server is accessible (e.g., http://localhost:5006).|                      |
-| SERVER_PASSWORD                   | The password you’ve set for your Actual Server.                             |                      |
+| SERVER_PASSWORD                   | The password you've set for your Actual Server.                             |                      |
 | BUDGET_UUID                       | The unique identifier for your budget. See Finding Your Budget UUID for help.|                      |
 | BUDGET_PASSWORD                   | If your budget is password-protected, provide the password here. Otherwise, leave it blank.| |
 | OPENAI_API_KEY                    | Your OpenAI API key, obtainable from the OpenAI Dashboard.                  |                      |
@@ -133,6 +132,8 @@ For customization, use tools like [crontab.guru](https://crontab.guru/).
 
 2. View Logs (Optional):  
    `docker-compose logs -f`  
+
+3. If you are running this on the same machine as your Actual Server, you'll need to add some mutual networking.
 
 ### Without Docker
 
@@ -206,12 +207,8 @@ Follow the existing code style and include documentation with changes.
 
 ## License
 
-This project is licensed under the MIT License. You’re free to use, modify, and distribute this software.  
+This project is licensed under the MIT License. You're free to use, modify, and distribute this software.  
 
 ---
-
-## Acknowledgments
-
-Thank you for choosing Actual-GPT! We’re excited to help streamline your budgeting process. If you have questions or need assistance, feel free to reach out.
 
 Happy budgeting!
